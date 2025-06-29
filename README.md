@@ -69,12 +69,6 @@ The server will start at [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📷 Screenshot
-
-> Add a screenshot here once your app is running!
-
----
-
 ## 👤 Author
 
 **Gurnoor Singh**  
