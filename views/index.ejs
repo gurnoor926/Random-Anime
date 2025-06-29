@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random_Anime</title>
+    <link rel="stylesheet" href="/main.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <main id="Main">
+        <!-- Header -->
+        <div id="RA"><h1>Random Anime Generator</h1></div>
+
+        <!-- Conditional rendering: If anime data is available -->
+        <% if(locals.anime){ %>
+            <h1><%= anime.title_english || anime.title || "Untitled Anime" %></h1>
+            <h2>EP:<%= anime.episodes || "Unknown" %>&nbsp; &nbsp;&nbsp;&nbsp; Duration: <%= anime.duration %></h2>
+            <img src="<%= img %>" alt="Anime Poster">
+            <div id="desc">
+                <p><%= desc || "No synopsis available." %></p>
+            </div>
+            <h3>Type: <%= anime.type %>&nbsp;&nbsp;&nbsp;&nbsp; Rating: <%= anime.rating %></h3>
+        <% } else { %>
+            <!-- Fallback content if no anime is generated yet -->
+            <h1>No Anime Generated</h1>
+            <img src="/Images/random.jpg" alt="no img">
+        <% } %>
+
+        <!-- Anime generation button -->
+        <div>
+            <form action="/search" method="post">
+                <input type="submit" value="Generate Random Anime">
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright Gurnoor Singh © <%= new Date().getFullYear() %></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Body styling */
+body {
+    background-color: #FFF2E0;
+    margin: 0px;
+}
+
+/* Header */
+#RA {
+    width: 100%;
+    margin: 0px;
+    background-color: #C0C9EE;
+    text-align: center;
+    color: #FFF2E0;
+}
+
+/* Main content container */
+#Main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    color: #898AC4;
+}
+
+/* Description box styling */
+#desc {
+    width: 350px;
+    height: 550px;
+    overflow-anchor: none;
+    overflow-y: scroll;
+    background-color: inherit;
+}
+
+/* Anime image size */
+img {
+    max-width: 200px;
+    max-height: 150px;
+}
+
+/* Button/input styling */
+input {
+    background-color: #A2AADB;
+    border: none;
+    color: #FFF2E0;
+    height: 55px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #C0C9EE;
+    text-align: center;
+    height: 12.2vh;
+    color: #FFF2E0;
+}
+footer > p {
+    font-size: 1.2rem;
+    padding-top: 50px;
+}
